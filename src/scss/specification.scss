@@ -1,6 +1,7 @@
 // Переменные
 $fontFamily:Montserrat;
-$fontSize: 18px;
+$fontSize_par: 18px;
+$fontSize_menu: 15px;
 $font_par_collor: #000;
 // Переменные
 
@@ -31,7 +32,7 @@ body {
 	line-height: 1.25em;
 	background: #FFFEFC;
 	font-family: $fontFamily;
-	font-size: $fontSize;
+	font-size: $fontSize_par;
 	color: $font_par_collor;
 }
 
