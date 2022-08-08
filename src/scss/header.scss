@@ -78,6 +78,11 @@
 		&:hover {
 			border-bottom: #fff 1px solid;
 		}
+		&_hiden {
+			@media (max-width: 1032px) {
+				display: none;
+			}
+		}
 	}
 
 	&__icon {
