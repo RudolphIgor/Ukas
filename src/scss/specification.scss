@@ -4,6 +4,8 @@ $fontSize_par: 18px;
 $fontSize_menu: 15px;
 $font_par_collor: #000;
 $font_text_color_3: #D4D4D4;
+$font_text_color_2: #00201F;
+$container:1221px;
 // Переменные
 
 *,
@@ -40,6 +42,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	font-weight: inherit;
 	font-size: inherit;
+	margin: 0;
 }
 
 .wrapper {
