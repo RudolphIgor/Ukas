@@ -3,9 +3,9 @@
 	&__container {
 		display: flex;
 		align-items: center;
-		max-width:1231px;
+		max-width:1221px;
 		margin: 0 auto;
-		padding: 30px 30px 30px 30px;
+		padding: 25px 25px 30px 30px;
 		justify-content: space-between;
 	}
 
@@ -33,41 +33,36 @@
 	&__body {
 		margin: 0 auto;
 		
-		@media (max-width:767px) {
-			position: fixed;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			padding: 100px 30px 30px 30px;
-			background: #000;
-			transform: left 0.3s ease 0s;
-		}
+		// @media (max-width:767px) {
+		// 	position: fixed;
+		// 	top: 0;
+		// 	left: 0;
+		// 	width: 100%;
+		// 	height: 100%;
+		// 	padding: 100px 30px 30px 30px;
+		// 	background: #000;
+		// 	transform: left 0.3s ease 0s;
+		// }
 	}
 
 	&__list {
-		
-		@media (max-width: 1010px) {
-			
-				justify-content: spacebetween;
-				
-			}	
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
 		& > li {
-			
-			padding: 10px 0;
+			// padding: 10px 0;
 			margin: 0 auto;
-			
 			@media (max-width: 767px) {
-				margin:  0 0 30px 0px;
-				font-size: 154px;
+				// margin:  0 0 30px 0px;
+				// font-size: 154px;
 			}	
 		}
 
 		& > li:not(:last-child){
+			
 			margin:  0 48px 0 0;
 			
 			@media (max-width: 1010px) {
-				// margin: 0;
 			}
 		}
 		@media (min-width: 767px) {
@@ -75,8 +70,6 @@
 			align-items: center;
 			
 		}
-		
-		
 	}
 
 	&__link {
@@ -88,55 +81,52 @@
 		&_hiden {
 			@media (max-width: 1010px) {
 				display: none;
-				
 			}
 		}
 	}
 
 	&__icon {
 		display: none;
-		@media (max-width:767px) {
-			z-index: 5;
-			display: block;
-			position: relative;
-			width: 22px;
-			height: 16px;
-			cursor: pointer;
+		// @media (max-width:767px) {
+		// 	z-index: 5;
+		// 	display: block;
+		// 	position: relative;
+		// 	width: 22px;
+		// 	height: 16px;
+		// 	cursor: pointer;
 			
-			& span,
-			&::before,
-			&::after {
-				left: 0;
-				position: absolute;
-				height: 10%;
-				width: 100%;
-				background-color: #fff;
-				transition: all 0.3s ease 0s;
-			}
+		// 	& span,
+		// 	&::before,
+		// 	&::after {
+		// 		left: 0;
+		// 		position: absolute;
+		// 		height: 10%;
+		// 		width: 100%;
+		// 		background-color: #fff;
+		// 		transition: all 0.3s ease 0s;
+		// 	}
 
-			&::before,
-			&::after {
-				content: "";
-			}
+		// 	&::before,
+		// 	&::after {
+		// 		content: "";
+		// 	}
 
-			&::before {
-				top: 0;
-			}
+		// 	&::before {
+		// 		top: 0;
+		// 	}
 
-			&::after {
-				bottom: 0;
-			}
+		// 	&::after {
+		// 		bottom: 0;
+		// 	}
 
-			& span {
-				top: 50%;
-				transform: scale(1) translate(0px, -50%);
-			}
-		}
+		// 	& span {
+		// 		top: 50%;
+		// 		transform: scale(1) translate(0px, -50%);
+		// 	}
+		// }
 	}
 }
 .phone {
 	height: 20px;
 	margin: 0 20px 0 0;
-}
-.logo {
 }
