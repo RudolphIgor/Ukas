@@ -1,3 +1,14 @@
+.line-decore {
+	display: none;
+	@media (max-width: 767px){
+		display: block;
+		width: 100%;
+		height: 1px;
+		background: #D4D4D4;
+		position: relative;
+		top: 76px;
+	}
+}
 .header {
 	background: #405858;
 	&__container {
@@ -7,12 +18,19 @@
 		margin: 0 auto;
 		padding: 25px 25px 30px 30px;
 		justify-content: space-between;
+		@media (max-width: 767px){
+			padding: 25px 25px 284px 30px;
+		}
 	}
 
 	&__logo {
 		display: block;
-		min-width: 150px;
-		height: 44px;
+		& > img {
+			width: 150px;
+			@media (max-width: 760px){
+				width: 76px;
+			}
+		}
 	}
 
 	&__menu {
@@ -22,17 +40,28 @@
 
 	&__phone {
 		display: flex;
-		font-size: 15px;
+		// font-size: 15px;
 		color: #fff;
 		align-items: center;
+		@media (max-width: 760px){
+			font-size: 12px;
+		}
 	}
 }
 
 .menu {
-
 	&__body {
 		margin: 0 auto;
+		display: flex;
 		
+		@media (max-width:767px){
+			font-size: 14px;
+			position: fixed;
+			right: 0px;
+			top:200px;
+		}
+		
+			
 		// @media (max-width:767px) {
 		// 	position: fixed;
 		// 	top: 0;
@@ -48,28 +77,39 @@
 	&__list {
 		display: flex;
 		justify-content: space-between;
-		width: 100%;
+		// width: 100%;
+		@media (max-width:767px){
+			position: fixed;
+			position: relative;
+			flex-direction: column;	
+			right: 0px;
+			bottom: 100px;
+		}
 		& > li {
-			// padding: 10px 0;
-			margin: 0 auto;
+			position: relative;
+			text-align: right;
+			margin:  0 48px 0 0;
 			@media (max-width: 767px) {
-				// margin:  0 0 30px 0px;
-				// font-size: 154px;
+				margin: 0 14px 24px 0;
+			}
+			&:last-child {
+				margin: 0;
+				@media (max-width: 767px) {
+					margin: 0 20px 24px 0;
+				}
+			}
+			@media (max-width: 767px) {
+				// margin: 10px 0 0 0;
+				// margin:  0px 20px 0px 0px;
 			}	
 		}
 
-		& > li:not(:last-child){
+		
+		// @media (min-width: 767px) {
+		// 	display: inline-flex;
+		// 	align-items: center;
 			
-			margin:  0 48px 0 0;
-			
-			@media (max-width: 1010px) {
-			}
-		}
-		@media (min-width: 767px) {
-			display: inline-flex;
-			align-items: center;
-			
-		}
+		// }
 	}
 
 	&__link {
@@ -81,6 +121,9 @@
 		&_hiden {
 			@media (max-width: 1010px) {
 				display: none;
+			}
+			@media (max-width: 767px){
+				display: block;
 			}
 		}
 	}
@@ -129,4 +172,7 @@
 .phone {
 	height: 20px;
 	margin: 0 20px 0 0;
+	@media (max-width: 760px){
+		height: 13px;
+	}
 }
