@@ -1,6 +1,8 @@
 const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
 
+
 export function slScroll() {
+	console.log(menuLinks);
 	if (menuLinks.length > 0) {
 		menuLinks.forEach(element => {
 			element.addEventListener('click', onMenuLinkClick)

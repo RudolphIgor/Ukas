@@ -103,3 +103,9 @@
 		cursor: pointer;
 	}
 }
+.arrow {
+	&:hover {
+		border-bottom: none;
+	}
+	
+}
