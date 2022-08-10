@@ -18,10 +18,11 @@
 		display: flex;
 		align-items: center;
 		margin: 0 auto;
-		padding: 30px 15px 30px 15px;
+		padding-top: 30px;
+		padding-bottom: 30px;
 		justify-content: space-between;
 		transition: all 0.3s ease 0s;
-		@media (max-width: 767px){
+		@media (max-width: 768px){
 			&_active {
 				padding: 25px 25px 284px 30px;
 				transition: all 0.3s ease 0s;
@@ -33,7 +34,7 @@
 	&__logo {
 		display: block;
 		& > img {
-			@media (max-width: 451px){
+			@media (max-width: 992px){
 				max-width: 76px;
 			}
 		}
@@ -62,7 +63,7 @@
 	&__body {
 		margin: 0 auto;
 		display: flex;
-		@media (max-width:767px){
+		@media (max-width:768px){
 			font-size: 14px;
 			position: fixed;
 			right: 30px;
@@ -89,7 +90,7 @@
 		& > li {
 			position: relative;
 			text-align: right;
-			margin:  0 48px 0 0;
+			margin:  0 48px 0px 0;
 			@media (max-width: 767px) {
 				margin: 0 14px 24px 0;
 			}
@@ -110,10 +111,10 @@
 			color: $font_text_color_3;
 		}
 		&_hiden {
-			@media (max-width: 1010px) {
+			@media (max-width: 1200px) {
 				display: none;
 			}
-			@media (max-width: 767px){
+			@media (max-width: 768px){
 				display: block;
 			}
 		}
@@ -121,7 +122,7 @@
 
 	&__icon {
 		display: none;
-		@media (max-width:767px) {
+		@media (max-width:768px) {
 			z-index: 5;
 			display: block;
 			position: relative;
