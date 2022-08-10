@@ -3,7 +3,6 @@
 	@media (max-width: 767px){
 		&_active {
 			display: block;
-			width: 100%;
 			height: 1px;
 			background: $font_text_color_3;
 			position: relative;
@@ -18,9 +17,8 @@
 	&__container {
 		display: flex;
 		align-items: center;
-		max-width:1221px;
 		margin: 0 auto;
-		padding: 25px 25px 30px 30px;
+		padding: 30px 15px 30px 15px;
 		justify-content: space-between;
 		transition: all 0.3s ease 0s;
 		@media (max-width: 767px){
@@ -35,9 +33,8 @@
 	&__logo {
 		display: block;
 		& > img {
-			width: 150px;
 			@media (max-width: 451px){
-				width: 76px;
+				max-width: 76px;
 			}
 		}
 	}
