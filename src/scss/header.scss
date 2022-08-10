@@ -1,12 +1,12 @@
 .line-decore {
 	transform: translate(1000px, 0px);
-	@media (max-width: 767px){
+	@media (max-width: 768px){
 		&_active {
 			display: block;
 			height: 1px;
 			background: $font_text_color_3;
 			position: relative;
-			top: 76px;
+			top: 105px;
 			transform: translate(0px, 0px);
 			transition: all 0.3s ease 0s;
 		}
@@ -24,8 +24,11 @@
 		transition: all 0.3s ease 0s;
 		@media (max-width: 768px){
 			&_active {
-				padding: 25px 25px 284px 30px;
+				padding: 30px 15px 300px 15px;
 				transition: all 0.3s ease 0s;
+				@media (max-width:540px){
+					padding: 30px 15px 330px 15px;
+				}
 			}
 			
 		}
@@ -35,6 +38,9 @@
 		display: block;
 		& > img {
 			@media (max-width: 992px){
+				// max-width: 76px;
+			}
+			@media (max-width:576px){
 				max-width: 76px;
 			}
 		}
@@ -51,6 +57,9 @@
 		color: #fff;
 		align-items: center;
 		@media (max-width: 451px){
+			// font-size: 12px;
+		}
+		@media (max-width:576px){
 			font-size: 12px;
 		}
 		&:hover {
@@ -80,23 +89,26 @@
 	&__list {
 		display: flex;
 		justify-content: space-between;
-		@media (max-width:767px){
+		@media (max-width:768px){
 			position: fixed;
 			position: relative;
 			flex-direction: column;	
-			right: 0px;
-			bottom: 100px;
+			right: 110px;
+			bottom: 50px;
+			@media (max-width:540px){
+				right: 0px;
+			}
 		}
 		& > li {
 			position: relative;
 			text-align: right;
 			margin:  0 48px 0px 0;
-			@media (max-width: 767px) {
+			@media (max-width: 768px) {
 				margin: 0 14px 24px 0;
 			}
 			&:last-child {
 				margin: 0;
-				@media (max-width: 767px) {
+				@media (max-width: 768px) {
 					margin: 0 14px 24px 0;
 				}
 			}
