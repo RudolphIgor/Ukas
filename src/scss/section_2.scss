@@ -1,0 +1,57 @@
+.about {
+	border: 1px solid red;
+	padding: 120px 0px 120px 0px;
+	&__title {
+		margin: 0px 0px 60px 0px;
+	}
+	&__text {
+		font-size: $fontSize_par;
+		border-bottom: 1px solid #000;
+		margin: 0px 0px 60px 0px;
+		& > p {
+			margin: 0px 0px 30px 0px;
+			&:last-child {
+				margin: 0px 0px 60px 0px;
+			}
+		}
+		
+	}
+
+	&__cards {
+		display: flex;
+		justify-content: space-between;
+		color: $font_text_color_2;
+		font-size: 20px;
+		&__cadr {
+			border: 1px solid red;
+			text-align: center;
+			width: 224px;
+			// max-width: 
+			// margin-right: 59px;			
+			&:nth-child(3) {
+				width: 305px;
+				& > img {
+					height: 55%;
+				}
+			}	
+			&:last-child {
+				width: 281px;
+				& > img {
+					height: 55%;
+				}
+			}	
+			& > img {
+				margin: 0px 0px 23px 0px;
+			}
+		
+			& > span {
+				
+			}
+		}
+		
+	}
+}
+
+
+
+
