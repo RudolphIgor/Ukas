@@ -9,6 +9,7 @@
 
 .accordion {
 	// transition: height 1.5s;
+	max-height: auto;
 	&__item {
 		display: flex;
 		margin: 13px 0px 0px 0px;
@@ -17,11 +18,8 @@
 		overflow: hidden;
 		position: relative;
 		max-height: 71px;
-		// transition: max-height 0.3s;
-		&.active {
-			max-height: 300px;
-			transition: max-height 0.3s cubic-bezier(1, 0, 1, 0);
-		}
+		transition: max-height 0.3s ease-in;
+	
 		& > .accordion-arrow {
 			display: block;
 			position: absolute;
@@ -32,9 +30,7 @@
 			position: absolute;
 			transform: rotate(180deg);
 		}
-		&:last-child {
-			border-bottom: 1px solid #000;
-		}
+		
 		& > .title {
 			min-width: 300px;
 			font-weight: 600;
@@ -46,9 +42,10 @@
 			font-size: $fontSize_par;
 			& > p {
 				padding: 0px 71px 0px 0px;
-				&:not(:last-child){
-					margin: 0px 0px 30px 0px;
-				}
+			
+				// &:not(:last-child){
+				// 	margin: 0px 0px 30px 0px;
+				// }
 			}
 
 			
