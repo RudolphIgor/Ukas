@@ -100,6 +100,28 @@ main {
 		top:45%;
 		left:0;
 	};
+	@media (max-width:1400px){
+		// height: 100%;
+		// top: -1px;
+	}
+	@media (max-width:1200px){
+		// height: 125%;
+		// left: -383px;
+		// top: -63px;
+	}
+	@media (max-width:992px){
+		// position: relative;
+		// height: 110%;
+		// left: -619px;
+		// top: -63px;
+	}
+	@media (max-width:768px){
+		width: 212px;
+		height: 212px;
+	}
+	@media (max-width:576px){
+		// min-width: 88%;
+	}
 }
 .section_title {
 	text-transform: uppercase;

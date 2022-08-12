@@ -215,29 +215,15 @@
 	}
 
 	&__btn {
-		
-		
-		@media (max-width:1400px){
-			// height: 100%;
-			// top: -1px;
-		}
-		@media (max-width:1200px){
-			// height: 125%;
-			// left: -383px;
-			// top: -63px;
-		}
-		@media (max-width:992px){
-			// position: relative;
-			// height: 110%;
-			// left: -619px;
-			// top: -63px;
-		}
 		@media (max-width:768px){
-			// min-width: 540px;
+			position: relative;
+    		top: 98px;
 		}
 		@media (max-width:576px){
-			// min-width: 88%;
+			position: inherit;
+			margin: 0 auto;
 		}
+		
 	}
 	&__arrow {
 		background: none;
@@ -258,9 +244,16 @@
 		@media (max-width:992px){
 			left: -534px;
 		}
+		@media (max-width:768px){
+			top: -77px;
+    			left: -498px;
+		}
+
+
 		@media (max-width:576px){
 			left: -734px;
 			top: 44px;
+				
 		}
 		
 	}
