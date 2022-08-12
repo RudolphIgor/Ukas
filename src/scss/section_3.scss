@@ -71,5 +71,16 @@
 		}
 	}
 }
+.service-btn {
+	position: absolute;
+	right: 102px;
+
+	@media (max-width: 576px) {
+		right: 30%;
+	}
+	@media (max-width: 440px) {
+		right: 20%;
+	}
+}
 
 
