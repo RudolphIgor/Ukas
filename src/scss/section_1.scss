@@ -215,27 +215,8 @@
 	}
 
 	&__btn {
-		display: flex;
-		width: 236px;
-		height: 236px;
-		border-radius: 150px;
-		justify-content: center;
-		align-items: center;
-		background: linear-gradient(210.55deg, #AEA8A8 31.43%, rgba(115, 165, 165, 0.96) 102.78%);
-		box-shadow: 0px 11px 12px rgba(0, 32, 31, 0.13);
-		&:hover {
-			background: linear-gradient(210.55deg, #AEA8A8 31.43%, rgba(174, 168, 168, 0.96) 102.78%);
-		}
-		&:active {
-			background: linear-gradient(210.55deg, #73A5A5 31.43%, rgba(115, 165, 165, 0.96) 102.78%);
-		}
-		& > span {
-			color: #fff;
-			// position: relative;
-			font-weight: 700;
-			top:45%;
-			left:0;
-		};
+		
+		
 		@media (max-width:1400px){
 			// height: 100%;
 			// top: -1px;
