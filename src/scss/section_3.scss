@@ -15,40 +15,42 @@
 		position: relative;
 		max-height: 71px;
 		transition: max-height 0.3s ease-in;
-	
+		&.active .content {
+			visibility: visible;
+			transition: max-height 0s;
+		}
+		&.active .accordion-arrow{
+			position: absolute;
+			transform: rotate(180deg);
+			
+		}
 		& > .accordion-arrow {
 			display: block;
 			position: absolute;
 			right: 0px;
 			bottom: 14px;
+			transition: all 0.3s ease-in;
 		}
-		& > .accordion-arrow.active {
-			position: absolute;
-			transform: rotate(180deg);
-		}
-		
+
 		& > .title {
 			min-width: 300px;
 			font-weight: 600;
 			font-size: 18px;
 			padding-right: 10px;
 		}
+
 		& > .content {
-			// visibility: hidden;
+			visibility: hidden; 
 			position: relative;
 			font-size: $fontSize_par;
 			& > p {
 				padding: 0px 71px 0px 0px;
 			
-				// &:not(:last-child){
-				// 	margin: 0px 0px 30px 0px;
-				// }
+				&:not(:last-child){
+					margin: 0px 0px 30px 0px;
+				}
 			}
-
-			
 		}
-
-		
 	}
 }
 
