@@ -5,12 +5,12 @@
 		spaceBetween: 31,
 		centeredSlides: true,
 		initialSlide: 1,
+		simulateTouch: false,
 		freeMode: {
 			enabled: true,
 		},
 		breakpoints: {
 			319: {
-				simulateTouch: true,
 				scrollbar: {
 					el: '.swiper-scrollbar',
 					dragSize: '140px',
@@ -19,7 +19,6 @@
 				},
 			},
 			992: {
-				simulateTouch: false,
 				scrollbar: {
 					enabled: false,
 				},

@@ -200,10 +200,13 @@
 		}
 	}
 }
-.phone {
-	height: 20px;
-	margin: 0 20px 0 0;
-	@media (max-width: 451px){
-		height: 13px;
+.header__phone {
+	& > img {
+		height: 20px;
+		margin: 0 20px 0 0;
+		@media (max-width: 451px){
+			height: 13px;
+		}
 	}
 }
+
