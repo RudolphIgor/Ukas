@@ -54,7 +54,6 @@
 		opacity: 0.8;
 	}
 	
-	
 	& > img {
 		display: block;
 		height: 134.5%;
@@ -89,7 +88,6 @@
 		}
 	}
 }
-
 
 .container {
 	&_hero{
@@ -210,25 +208,12 @@
 		& > li:last-child {
 			margin: 0px 0px 0px 0px;
 		}
-	
 	}
-
-
-.offer__btn{
-	width: 236px;
-	height: 236px;
-
-	@media (max-width:768px){
-		width: 212px;
-		height: 212px;
-	}
-}
-
 
 	&__btn {
 		@media (max-width:768px){
 			position: relative;
-    		top: 98px;
+			top: 98px;
 		}
 		@media (max-width:576px){
 			position: inherit;
@@ -257,9 +242,8 @@
 		}
 		@media (max-width:768px){
 			top: -77px;
-    			left: -498px;
+			left: -498px;
 		}
-
 
 		@media (max-width:576px){
 			left: -734px;
