@@ -1,7 +1,9 @@
 .page__section_4 {
 	padding: 284px 0 70px 0;
 }
-
+.review-container{
+	padding: 0;
+}
 .wrapper-title {
 	display: flex;
 }
@@ -30,7 +32,7 @@
 	width: auto;
 }
 
-.card {
+.review-card {
 	width: 369px;
 	min-height: 444px;
 	margin: 0 auto;
