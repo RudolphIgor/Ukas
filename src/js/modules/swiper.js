@@ -1,6 +1,5 @@
 
 	const swiper = new Swiper('.swiper',{
-		simulateTouch: true,
 		grabCursor: true,
 		slidesPerView: 'auto',
 		spaceBetween: 31,
@@ -9,10 +8,9 @@
 		freeMode: {
 			enabled: true,
 		},
-		
 		breakpoints: {
-		
 			319: {
+				simulateTouch: true,
 				scrollbar: {
 					el: '.swiper-scrollbar',
 					dragSize: '140px',
@@ -21,8 +19,8 @@
 				},
 			},
 			992: {
+				simulateTouch: false,
 				scrollbar: {
-
 					enabled: false,
 				},
 			},
