@@ -27,12 +27,15 @@
 			&_active {
 				padding: 30px 15px 300px 15px;
 				transition: all 0.3s ease 0s;
+				@media (max-width:576px){
+					padding: 30px 15px 325px 15px;
+				}
 				@media (max-width:540px){
 					padding: 30px 15px 330px 15px;
 				}
 			}
-			
 		}
+		
 	}
 
 	&__logo {
@@ -73,14 +76,26 @@
 		@media (max-width:768px){
 			font-size: 14px;
 			position: fixed;
-			right: 30px;
-			top:200px;
+			right: 18%;
+			top: 133px;
 			transform: translate(1000px, 0px);
 			transition: all 0.3s ease 0s;
 			&_active {
 				transform: translate(0px, 0px);
 				transition: all 0.3s ease 0s;
 			}
+		}
+		@media (max-width:710px){
+			right: 16%;
+		}
+		@media (max-width:650px){
+			right: 12%;
+		}
+		@media (max-width:600px){
+			right: 11%;
+		}
+		@media (max-width:578px){
+			right: 8%;
 		}
 	}
 
@@ -92,8 +107,8 @@
 			position: fixed;
 			position: relative;
 			flex-direction: column;	
-			right: 110px;
-			bottom: 50px;
+			// right: 110px;
+			// bottom: 50px;
 			@media (max-width:540px){
 				right: 0px;
 			}
