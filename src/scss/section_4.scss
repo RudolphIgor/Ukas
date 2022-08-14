@@ -4,7 +4,6 @@
 
 .wrapper-title {
 	display: flex;
-
 }
 .title-decore {
 	z-index: 5;
@@ -22,22 +21,33 @@
 		background: #000;
 	}
 }
-
-.review {
-
-	&__wrapper{
-
-		& > .review__slide{
-			width: 300px;
-			height: 400px;
-			border: 1px solid red;
-		} 
-	}
-
-
+.swiper {
+}
+.swiper-wrapper{
+	margin-bottom: 31px !important; 
+}
+.swiper-slide{
+	width: auto;
+	background: green;
 }
 
-.swiper {
-	width: 600px;
-	height: 300px;
-  }
+.card {
+	width: 369px;
+	height: 444px;
+	border: 1px solid red;
+	margin: 0 auto;
+	background: green;
+}
+.swiper-scrollbar {
+	height: 2px !important;
+    background: #000;
+    border-radius: 0;
+}
+
+.swiper-scrollbar-drag {
+	height: 5px;
+    background: #405858;
+	border-radius: 0;
+	// width: 142px !important;
+	top: -1.5px;
+}

@@ -8,4 +8,4 @@ flsFunctions.isWebp();
 slowlyScroll.slScroll();
 burger.iconsactive();
 accordion.swipe();
-slider.startslider();
+// slider.startslider();
