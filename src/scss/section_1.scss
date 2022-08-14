@@ -210,8 +210,20 @@
 		& > li:last-child {
 			margin: 0px 0px 0px 0px;
 		}
-
+	
 	}
+
+
+.offer__btn{
+	width: 236px;
+	height: 236px;
+
+	@media (max-width:768px){
+		width: 212px;
+		height: 212px;
+	}
+}
+
 
 	&__btn {
 		@media (max-width:768px){
