@@ -1,0 +1,126 @@
+.footer {
+	padding: 102px 0px 42px 0px;
+	position: relative;
+	background: url('@img/form_bg.webp') no-repeat no-repeat;
+	background-position: 0px -380px;
+	background-size: cover;
+
+	@media (max-width: 1200px){
+		background-position: 0px -250px;
+	}
+	@media (max-width: 992px){
+		background-position: 0px -176px;
+	}
+	@media (max-width: 992px){
+		background-position: 0px -27px;
+	}
+
+	@media (max-width: 576px){
+		background-position: 0px 0px;
+	}
+	&::after {
+		z-index: 1;
+		content: "";
+		display: block;    
+		width: 100%;
+		height: 100%;    
+		position: absolute;
+		top: 0;      
+		left: 0;   
+		background: #000;
+		opacity: 0.76;
+	}
+}
+
+.footer-container {
+	position: relative;
+	z-index: 5;
+
+	@media (max-width: 576px){
+		padding: 0 40px;
+	}
+}
+
+.footer-content {
+	font-size: 18px;
+	color: #fff;
+	display: flex;
+
+	@media (max-width: 992px) {
+		flex-direction: column;
+	}
+	&_left {
+		display: flex;
+		flex-direction: column;
+		margin: 0px 151px 0px 0px;
+		font-size: 14px;
+		@media (max-width: 992px) {
+			margin: 0px 0px 60px 0px;
+		}
+
+		& > a {
+			margin: 0px 0px 20px 0px
+		}
+	}
+	& > .block-footer {
+		display: flex;
+
+		@media (max-width: 768px) {
+			flex-direction: column;
+		}
+		& > .center {
+			display: flex;
+			flex-direction: column;
+			margin: 0px 173px 0px 0px;
+			font-size: 18px;
+
+			@media (max-width: 768px) {
+				margin:0px 0px 18px 0px;
+				font-size: 15px;
+			}
+			& > span {
+				margin: 0px 0px 25px 0px;
+			}
+			& > .logo {
+				display: block;
+				margin: 0px 0px 20px 0px;
+			}
+	
+			& > h3 {
+				font-size: 20px;
+				font-weight: 700;
+				text-transform: uppercase;
+				margin: 0px 0px 25px 0px;
+			}
+			& > a {
+				color: #fff;
+	
+				&:not(:last-child) {
+					margin: 0px 0px 25px 0px;
+				}
+			}
+		}
+	
+		& > .right {
+			display: flex;
+			flex-direction: column;
+	
+			& > h3 {
+				font-size: 20px;
+				font-weight: 700;
+				text-transform: uppercase;
+				margin: 0px 0px 25px 0px;
+			}
+		}
+	}
+	
+
+	
+}
+
+.arrow-up {
+	display: flex;
+	justify-content: right;
+	
+	
+}
