@@ -80,8 +80,8 @@ main {
 
 .btn {
 	display: flex;
-	width: 236px;
-	height: 236px;
+	min-width: 236px;
+	min-height: 236px;
 	border-radius: 150px;
 	justify-content: center;
 	align-items: center;
@@ -112,12 +112,11 @@ main {
 	@media (max-width:992px){
 		// position: relative;
 		// height: 110%;
-		// left: -619px;
-		// top: -63px;
+		min-width: 212px;
+		min-height: 212px;
 	}
 	@media (max-width:768px){
-		width: 212px;
-		height: 212px;
+		
 	}
 	@media (max-width:576px){
 		// min-width: 88%;
