@@ -125,9 +125,14 @@
 }
 
 .arrow-up {
-	display: flex;
-	justify-content: right;
-	margin-bottom: 10px;
+		display: block;
+	width: 10px;
+	height: 10px;
+	background: #fff;
+	margin-left: auto;
+	// display: flex;
+	// justify-content: right;
+	// margin-bottom: 10px;
 	// padding: 10px 10px;
 }
 
