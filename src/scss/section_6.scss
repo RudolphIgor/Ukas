@@ -71,6 +71,7 @@
 .arrow-contacts {
 	display: flex;
 	flex-direction: column;
+	
 	width: 196px;
 	height: 84px;
 	align-items: center;
@@ -85,4 +86,7 @@
 	& > span {
 
 	}
+}
+.show-contacts {
+	display: none;
 }
