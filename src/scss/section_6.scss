@@ -12,8 +12,9 @@
 	width: 100%;
 	margin: 0 auto;
 	z-index: -1;
-
+	transition: all 0.5s ease 0s;
 	& > .contacts-card {
+		display: block;
 		color: #d4d4d4;
 		position: relative;
 		top: -442px;
@@ -25,6 +26,9 @@
 		padding: 60px 90px 60px 90px;
 		text-align: left;
 
+		&.deactive {
+			display: none;
+		}
 		@media (max-width: 576px) {
 			width: 269px;
 			height: 266px;
@@ -69,24 +73,41 @@
 
 		
 .arrow-contacts {
-	display: flex;
-	flex-direction: column;
+	display: none;
+	@media (max-width:992px) {
+		display: flex;
+		flex-direction: column;
+		width: 220px;
+		height: 84px;
+		align-items: center;
+		margin: 36px auto;
+		
 	
-	width: 196px;
-	height: 84px;
-	align-items: center;
-	margin: 36px auto;
-
-	& > img {
-		width: 34px;
-		height: 41px;
-		margin: 0px 0px 13px 0px;
-
+		&.active  img{
+			transform: rotate(180deg);
+		}
+		& > img {
+			width: 34px;
+			height: 41px;
+			margin: 0px 0px 13px 0px;
+			transition: all 0.3s ease 0s;
+		}
+		& > span {
+	
+		}
 	}
-	& > span {
-
-	}
+	
 }
 .show-contacts {
 	display: none;
+	&.active {
+		display: block;
+	}
+}
+
+.show-kard {
+	display: block;
+	&.deactive {
+		display: none;
+	}
 }
