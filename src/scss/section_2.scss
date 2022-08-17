@@ -93,8 +93,14 @@
 }
 #calendar {
 	width: 305px;
+	@media (max-width:576px){
+		width: 224px;
+	}
 }
 #talk {
 	width: 281px;
+	@media (max-width:576px){
+		width: 147px;
+	}
 }
 
