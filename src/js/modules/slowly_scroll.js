@@ -16,7 +16,7 @@ function onMenuLinkClick(e) {
 	const menuLink = e.target;
 	if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
 		const gotoBlock = document.querySelector(menuLink.dataset.goto);
-		const gotoBlockValue = gotoBlock.getBoundingClientRect().top + window.scrollY - 300; //300 - Величина паддинга раскрывающейся под меню в шапке
+		const gotoBlockValue = gotoBlock.getBoundingClientRect().top + window.scrollY; //300 - Величина паддинга раскрывающейся под меню в шапке
 		
 		window.scroll({
 			top:gotoBlockValue,
