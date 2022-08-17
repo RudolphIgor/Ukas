@@ -126,10 +126,15 @@
 
 .arrow-up {
 		display: block;
-	width: 10px;
-	height: 10px;
-	background: #fff;
+	width: 35px;
+	height: 48px;
+	// background: rgb(70, 60, 60);
 	margin-left: auto;
+	cursor: pointer;
+	& > .foot-arrow:hover {
+		border-bottom: none;
+	}
+	
 	// display: flex;
 	// justify-content: right;
 	// margin-bottom: 10px;
