@@ -6,7 +6,6 @@ header('HTTP/1.1 404 Not Found')
 <head>
 <title>Юкас | Страница не найдена</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<link href='//fonts.googleapis.com/css?family=Capriola' rel='stylesheet' type='text/css'>
 <style type="text/css">
 body{
 	font-family: 'Montserrat';
