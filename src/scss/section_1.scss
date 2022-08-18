@@ -40,6 +40,12 @@
 	}
 	@media (max-width:576px){
 		min-width: 88%;
+		border-radius: 0 0 100px 100px;
+		height: 575px;
+	}
+
+	@media (max-width:450px){
+		min-width: 88%;
 		border-radius: 0 0 30px 30px;
 		height: 575px;
 	}
@@ -83,16 +89,16 @@
 			top: -34px;
 		}
 		@media (max-width:768px){
-			left: -362px;
+			left: -462px;
     		top: -38px;
 		}
 		@media (max-width:576px){
-			left: -393px; //603
+			left: -503px;
 			height: 100%;
 			top: 0px;
 		}
 		@media (max-width:360px){
-			left: -530px; //603
+			left: -577px;
 			height: 100%;
 			top: 0px;
 		}
