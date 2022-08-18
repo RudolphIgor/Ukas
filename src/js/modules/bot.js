@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		if (error === 0) {
 			form.classList.add('sending');
-			let response = await fetch('sendmessage.php', {
+			let response = await fetch('/files/sendmessage.php', {
 				method: 'POST',
 				body: formData
 			});
