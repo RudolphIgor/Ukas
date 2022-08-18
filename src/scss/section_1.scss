@@ -58,6 +58,7 @@
 	& > img {
 		display: block;
 		height: 134.5%;
+		image-rendering: crisp-edges;
 		// width: 100%;
 		position: absolute;
 		left: -96px;
@@ -78,18 +79,25 @@
 		}
 		@media (max-width:992px){
 			height: 110%;
-			left: -462px;
-			top: -11px;
+			left: -291px;
+			top: -34px;
 		}
 		@media (max-width:768px){
-			left: -646px;
-			top: -3px;
+			left: -362px;
+    		top: -38px;
 		}
 		@media (max-width:576px){
-			left: -603px;
+			left: -393px; //603
 			height: 100%;
 			top: 0px;
 		}
+		@media (max-width:360px){
+			left: -530px; //603
+			height: 100%;
+			top: 0px;
+		}
+
+		
 	}
 }
 
@@ -255,7 +263,7 @@
 		}
 		@media (max-width:768px){
 			top: -141px;
-			left: -464px;
+			left: -492px;
 		}
 
 		@media (max-width:576px){
