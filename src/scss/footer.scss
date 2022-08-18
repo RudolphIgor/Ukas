@@ -100,7 +100,10 @@
 			}
 			& > a {
 				color: #fff;
-	
+				
+				&:hover {
+					color: #BFC8C7;
+				}
 				&:not(:last-child) {
 					margin: 0px 0px 25px 0px;
 				}
@@ -135,22 +138,6 @@
 		border-bottom: none;
 	}
 	
-	// display: flex;
-	// justify-content: right;
-	// margin-bottom: 10px;
-	// padding: 10px 10px;
+	
 }
 
-// .blockend1 {
-// 	display: block;
-// 	width: 10px;
-// 	height: 10px;
-// 	background: #fff;
-// 	margin-left: auto;
-// }
-// .blockend2 {
-// 	display: block;
-// 	width: 10px;
-// 	height: 10px;
-// 	background: #fff;
-// }
