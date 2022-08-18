@@ -6,10 +6,12 @@
 
 .accordion {
 	max-height: auto;
+	// align-items: center;
 	&__item {
 		cursor: pointer;
+		align-items: center;
 		display: flex;
-		margin: 13px 0px 0px 0px;
+		margin: 0px 0px 0px 0px;
 		border-top: 1px solid #000;
 		padding: 12px 0;
 		overflow: hidden;
@@ -22,6 +24,10 @@
 		}
 		@media (max-width:576px) {
 			padding-bottom: 40px;
+		}
+
+		&.active {
+			align-items:flex-start;
 		}
 		&.active .content {
 			visibility: visible;
@@ -52,6 +58,7 @@
 			font-weight: 600;
 			font-size: 18px;
 			padding-right: 10px;
+			margin: 0;
 			@media (max-width:768px){
 				margin-bottom: 28px;
 			}
